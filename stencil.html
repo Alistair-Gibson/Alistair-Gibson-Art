@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>alistair gibson stencil</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oxygen&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="https://kit.fontawesome.com/e417cd4a72.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section>
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">alistair gibson</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                paintings
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="stencil.html">stencil</a>
+                <a class="dropdown-item" href="oil.html">oil</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="grid-img myImages" id="myImg" src="images/PlungesAtHighSpeed.jpg" onclick="openModal();currentSlide(1)" alt="Plunges At High Speed">
+        <img class="grid-img myImages" id="myImg" src="images/SmallAndCompact.jpg" onclick="openModal();currentSlide(1)" alt="Small and Compact">
+        <img class="grid-img myImages" id="myImg" src="images/TheLightInTheDark.jpg" onclick="openModal();currentSlide(1)" alt="The Light In the Dark">
+      </div>
+      <div class="column">
+        <img class="grid-img myImages" id="myImg" src="images/SmallAndCompactVer3.jpg" onclick="openModal();currentSlide(1)" alt="Small and Compact Ver 3">
+        <img class="grid-img myImages" id="myImg" src="images/WereBetterThanYou.jpg" onclick="openModal();currentSlide(1)" alt="Were Better Than You">
+        <img class="grid-img myImages" id="myImg" src="images/FalconVer3.jpg" onclick="openModal();currentSlide(1)" alt="Falcon Ver 3">
+      </div>
+      <div class="column">
+        <img class="grid-img myImages" id="myImg" src="images/MariahVer1.jpg" onclick="openModal();currentSlide(1)" alt="Mariah Ver 1">
+        <img class="grid-img myImages" id="myImg" src="images/WhiteHeadedVer2.jpg" onclick="openModal();currentSlide(1)" alt="White Headed Ver 2">
+        <img class="grid-img myImages" id="myImg" src="images/SmallAndCompactVer2.jpg" onclick="openModal();currentSlide(1)" alt="Small and Compact Ver 2">
+      </div>
+      <div class="column">
+        <img class="grid-img myImages" id="myImg" src="images/MariahVer2.jpg" onclick="openModal();currentSlide(1)" alt="Mariah Ver 2">
+        <img class="grid-img myImages" id="myImg" src="images/SmallAndCompactVer4.jpg" onclick="openModal();currentSlide(1)" alt="Small and Compact ver 4">
+        <img class="grid-img myImages" id="myImg" src="images/FalconVer2.jpg" onclick="openModal();currentSlide(1)" alt="Falcon Ver 2">
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+
+
+
+    <div class="footer">
+      <div class="container-fluid">
+
+
+        <i class="footer-icon fab fa-twitter"></i>
+        <i class="footer-icon fab fa-facebook-f"></i>
+        <i class="footer-icon fab fa-instagram"></i>
+        <i class="footer-icon fas fa-envelope"></i>
+        <p>© Copyright 2019 Alistair Gibson</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/javascript.js" charset="utf-8"></script>
+
+</body>
+
+</html>
